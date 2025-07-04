@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luckiest+Guy&family=Oswald:wght@302&display=swap');
+/* Fondo oscuro para destacar el neón */
+body {
+    background-color: #0f0f0f;
+    color: rgb(8, 8, 8);
+    animation: fadeIn 1s ease-in;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Estilo neón para los inputs */
+  input.form-control {
+    background-color: #ffffffa8;
+    border: 2px solid #7ccbff;
+    color: #000000;
+    box-shadow: 0 0 10px #7ccbff, 0 0 20px #7ccbff inset;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  input.form-control::placeholder {
+    color: #0c0c0caa;
+  }
+  
+  input.form-control:focus {
+    outline: none;
+    border-color: #80c6ff;
+    box-shadow: 0 0 15px #7ccbff, 0 0 25px #ffffff inset;
+  }
+  
+  /* Botón también con efecto neón */
+  button.btn-primary {
+    background-color:#4faff0;
+    border: none;
+    color: #ece7e7;
+    font-weight: bold;
+    box-shadow: 0 0 10px#7ccbff;
+    transition: all 0.3s ease;
+  }
+  
+  button.btn-primary:hover {
+    box-shadow: 0 0 20px#7ccbff, 0 0 30px#7ccbff;
+  }
+  
+  /* Animación general */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Opcional: alerta más neón */
+  .alert {
+    background-color: rgba(0, 255, 255, 0.1);
+    border: 1px solid#7ccbff;
+    box-shadow: 0 0 15px#7ccbff;
+    color: #000000;
+  }
